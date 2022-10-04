@@ -15,7 +15,7 @@ const Home = () => {
             setSidebarSwitch(sidebarSwitch ? false : true)
           }}
         />
-        <p>Wassup</p>
+        <p>WhatsApp</p>
       </div>
 
       <div className="home">

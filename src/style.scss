@@ -16,10 +16,26 @@
   }
 }
 
-// $darkColor: #2f2d52;
+// $color1: #2f2d52;
+// $color2: #3e3c61;
+// $color3: #5d5b8d;
+// $color4: #7b96ec;
+// $color5: #8da4f1;
+// $color6: #a7bcff;
+// $color7: #ddddf7;
+
+$color1: #313131;
+$color2: #2b2b2b;
+$color3: #00617c;
+$color4: #141414;
+$color5: #5d1d8b;
+$color6: #464646;
+$color7: #d6d6d6;
+
+// $darkColor: $color1;
 
 .form__container {
-  background-color: #a7bcff;
+  background-color: $color6;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -34,13 +50,13 @@
     align-items: center;
 
     .logo {
-      color: #5d5b8d;
+      color: $color3;
       font-weight: bold;
       font-size: 24px;
     }
 
     .title {
-      color: #5d5b8d;
+      color: $color3;
       font-size: 12px;
     }
 
@@ -53,14 +69,14 @@
         padding: 15px;
         border: none;
         width: 250px;
-        border-bottom: 1px solid #a7bcff;
+        border-bottom: 1px solid $color6;
         &::placeholder {
           color: rgb(175, 175, 175);
         }
       }
 
       button {
-        background-color: #7b96ec;
+        background-color: $color4;
         color: white;
         padding: 10px;
         font-weight: bold;
@@ -72,7 +88,7 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        color: #8da4f1;
+        color: $color5;
         font-size: 12px;
         cursor: pointer;
 
@@ -82,7 +98,7 @@
       }
     }
     p {
-      color: #5d5b8d;
+      color: $color3;
       font-size: 12px;
       margin-top: 10px;
     }
@@ -93,8 +109,8 @@
 
 .uphome {
   position: absolute;
-  color: #2f2d52;
-  background-color: #a7bcff;
+  color: $color1;
+  background-color: $color6;
   display: none;
   @include mobile {
     display: flex;
@@ -102,13 +118,15 @@
 
     padding: 25px;
     .burger {
+      color: white;
       cursor: pointer;
       width: 60px;
       height: 40px;
     }
     p {
+      color: white;
       position: relative;
-      left: 150px;
+      left: 130px;
       cursor: pointer;
       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
       font-weight: bold;
@@ -118,7 +136,7 @@
 }
 
 .home {
-  background-color: #a7bcff;
+  background-color: $color6;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -147,17 +165,17 @@
 
     .sidebar {
       flex: 2;
-      background-color: #3e3c61;
+      background-color: $color2;
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: $color1;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
-        color: #ddddf7;
+        color: $color7;
 
         .logo {
           font-weight: bold;
@@ -171,7 +189,7 @@
           gap: 10px;
 
           img {
-            background-color: #ddddf7;
+            background-color: $color7;
             height: 24px;
             width: 24px;
             border-radius: 50%;
@@ -179,8 +197,8 @@
           }
 
           button {
-            background-color: #5d5b8d;
-            color: #ddddf7;
+            background-color: $color3;
+            color: $color7;
             font-size: 10px;
             border: none;
             cursor: pointer;
@@ -205,7 +223,7 @@
             padding: 5px;
             border-radius: 5px;
             cursor: pointer;
-            background-color: #ddddf7;
+            background-color: $color7;
           }
 
           input {
@@ -229,7 +247,7 @@
         cursor: pointer;
 
         &:hover {
-          background-color: #2f2d52;
+          background-color: $color1;
         }
         img {
           width: 50px;
@@ -257,7 +275,7 @@
 
       .chatinfo {
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: $color3;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -277,7 +295,7 @@
       }
 
       .messages {
-        background-color: #ddddf7;
+        background-color: $color7;
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
@@ -327,7 +345,7 @@
             }
 
             p {
-              background-color: #8da4f1;
+              background-color: $color5;
               color: white;
               border-radius: 10px 0px 10px 10px;
             }
@@ -346,7 +364,7 @@
           width: 100%;
           border: none;
           outline: none;
-          color: #2f2d52;
+          color: $color1;
           font-size: 18px;
 
           &::placeholder {
@@ -368,7 +386,7 @@
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: #8da4f1;
+            background-color: $color5;
             cursor: pointer;
           }
         }

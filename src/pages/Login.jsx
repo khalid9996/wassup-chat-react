@@ -23,7 +23,7 @@ const Login = () => {
   return (
     <div className="form__container">
       <div className="form__wrapper">
-        <span className="logo">Wassup</span>
+        <span className="logo">WhatsApp</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
           <input type="email" placeholder="email" />

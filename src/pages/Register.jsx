@@ -59,7 +59,7 @@ const Register = () => {
   return (
     <div className="form__container">
       <div className="form__wrapper">
-        <span className="logo">Wassup</span>
+        <span className="logo">WhatsApp</span>
         <span className="title">Register</span>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="display name" />
